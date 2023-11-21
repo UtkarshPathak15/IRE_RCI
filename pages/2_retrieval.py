@@ -236,7 +236,7 @@ row_model_interaction.load_state_dict(torch.load("row_model_interaction"))
 col_model_interaction = AlbertForSequenceClassification.from_pretrained('michaelrglass/albert-base-rci-wikisql-col')
 col_model_interaction.load_state_dict(torch.load("col_model_interaction"))
 
-pipe = pipeline(row_model_interaction, col_model_interaction, file_path="../", data_file_names=['wiki_sql_data_lookup.jsonl'], BM25_k=10)
+pipe = pipeline(row_model_interaction, col_model_interaction, file_path="", data_file_names=['wiki_sql_data_lookup.jsonl'], BM25_k=10)
 
 
 
