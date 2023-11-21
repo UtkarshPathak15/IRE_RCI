@@ -6,4 +6,4 @@ streamlit==1.23.1
 torch==1.13.1
 transformers==4.30.2
 ujson==5.7.0
-sentencepiece==0.1.92
+sentencepiece==0.1.99
